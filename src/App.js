@@ -1,24 +1,45 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header/Header';
+import { Container } from '@material-ui/core';
+import Home from './Components/Home/Home';
+import Reservation from './Components/Reservation/Reservation';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import NoMatch from './Components/NoMatch/NoMatch';
+import Hotel from './Components/Hotel/Hotel';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container>
+      <Router>
+      <Header></Header>
+      <Switch>
+      <Route exact path ="/">
+        <Home></Home>
+      </Route>
+        <Route path="/reservation/:id">
+          <Reservation/></Route>
+          <Route  path="/hotels/:name"> 
+          <Hotel></Hotel>
+          </Route>
+     <Route path="*">
+         <NoMatch></NoMatch>
+          </Route>
+      
+      
+      </Switch>
+      </Router>
+      </Container>
     </div>
   );
 }

@@ -1,0 +1,122 @@
+[
+    {
+        "id": 0,
+        "place":"Sundarban",
+        "title": "Light bright airy stylish stay",
+        "feature": "4 guests | 2 bedrooms | 2 beds | 2 baths",
+        "details": "Wif Air conditioning Kitchen",
+        "rating": 4.9,
+        "price": 34,
+        "image": "https://i.postimg.cc/9FCrwgyq/bedwhite.png"
+    },
+    {
+        "id": 1,
+        "place":"Sundarban",
+        "title": "Apartment in Lost Panorama",
+        "feature": "4 guests | 2 bedrooms | 2 beds | 2 baths",
+        "details": "Wif Air conditioning Kitchen",
+        "rating": 4.8,
+        "price": 52,
+        "image": "https://i.postimg.cc/WpMd3cqv/bedred.png"
+    },
+    {
+        "id": 2,
+        "place":"Sundarban",
+        "title": "AR Longe & Pool (r&r + b&b)",
+        "feature": "4 guests | 2 bedrooms | 2 beds | 2 baths",
+        "details": "Wif Air conditioning Kitchen",
+        "rating": 4.9,
+        "price": 44,
+        "image": "https://i.postimg.cc/qMwgscGD/eveningbeach.png"
+    },
+    {
+        "id": 3,
+        "place":"Sajek valley",
+        "title": "Mandarin Oriental",
+        "feature": "4 guests | 2 bedrooms | 2 beds | 2 baths",
+        "details": "Wif Air conditioning Kitchen",
+        "rating": 4.3,
+        "price": 35,
+        "image": "https://i.postimg.cc/2jH4BYtP/id3.jpg"
+    },
+    {
+        "id": 4,
+        "place":"Sajek valley",
+        "title": "Four Seasons Hotel",
+        "feature": "4 guests | 2 bedrooms | 2 beds | 2 baths",
+        "details": "Wif Air conditioning Kitchen",
+        "rating": 4.2,
+        "price": 39,
+        "image": "https://i.postimg.cc/8PjLR3Qs/id4.jpg"
+    },
+    {
+        "id": 5,
+        "place":"Sajek valley",
+        "title": "Knights Inn",
+        "feature": "4 guests | 2 bedrooms | 2 beds | 2 baths",
+        "details": "Wif Air conditioning Kitchen",
+        "rating": 4.9,
+        "price": 55,
+        "image": "https://i.postimg.cc/7Yd0mVw9/id6.jpg"
+    },
+    {
+        "id": 6,
+        "place":"Sreemangal",
+        "title": "Sunny Canopy",
+        "feature": "4 guests | 2 bedrooms | 2 beds | 2 baths",
+        "details": "Wif Air conditioning Kitchen",
+        "rating": 4.4,
+        "price": 45,
+        "image": "https://i.postimg.cc/Z5N3gdqS/id7.jpg"
+    },
+    {
+        "id": 7,
+        "place":"Sreemangal",
+        "title": "The Bay Club",
+        "feature": "4 guests | 2 bedrooms | 2 beds | 2 baths",
+        "details": "Wif Air conditioning Kitchen",
+        "rating": 4.9,
+        "price": 59,
+        "image": "https://i.postimg.cc/k4JbBYvJ/id8.jpg"
+    },
+    {
+        "id": 8,
+        "place":"Sreemangal",
+        "title": "Urban Boutique",
+        "feature": "4 guests | 2 bedrooms | 2 beds | 2 baths",
+        "details": "Wif Air conditioning Kitchen",
+        "rating": 4.8,
+        "price": 65,
+        "image": "https://i.postimg.cc/7LMzPr7t/id9.jpg"
+    },
+    {
+        "id": 9,
+        "place":"Cox's Bazar",
+        "title": "Light bright airy stylish apt stay",
+        "feature": "4 guests | 2 bedrooms | 2 beds | 2 baths",
+        "details": "Wif Air conditioning Kitchen",
+        "rating": 4.9,
+        "price": 34,
+        "image": "https://i.postimg.cc/9FCrwgyq/bedwhite.png"
+    },
+    {
+        "id": 10,
+        "place":"Cox's Bazar",
+        "title": "Apartment in Lost Panorama",
+        "feature": "4 guests | 2 bedrooms | 2 beds | 2 baths",
+        "details": "Wif Air conditioning Kitchen",
+        "rating": 4.8,
+        "price": 52,
+        "image": "https://i.postimg.cc/WpMd3cqv/bedred.png"
+    },
+    {
+        "id": 11,
+        "place":"Cox's Bazar",
+        "title": "AR Longe & Pool (r&r + b&b)",
+        "feature": "4 guests | 2 bedrooms | 2 beds | 2 baths",
+        "details": "Wif Air conditioning Kitchen",
+        "rating": 4.9,
+        "price": 44,
+        "image": "https://i.postimg.cc/qMwgscGD/eveningbeach.png"
+    }
+]

@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.611), rgba(0, 0, 0, 0.611)), url("./Images/Image/Rectangle\ 1.png");
+  background-size: cover;
 }
 
 .App-logo {
