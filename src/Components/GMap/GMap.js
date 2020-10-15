@@ -14,7 +14,7 @@ const GMap = (props) => {
           defaultZoom={10}
         >
           
-          {/* <MDBIcon className="fa-3x" style={{color:'red'}} icon="map-marker" position={marker} /> */}
+          
           <RoomIcon className="fa-3x" style={{color:'red'}}  position={maker}></RoomIcon>
         </GoogleMapReact>
       </div>

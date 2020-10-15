@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -17,6 +17,7 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 import logo from '../../Images/Logo.png'
 import { Button} from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../App';
 // import { googleSignOut } from "../Login/LogInManager";
 
 
@@ -86,6 +87,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Header = () => {
+const [loggedInUser, setLoggedInUser] = useContext(UserContext)
+  
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -197,8 +200,20 @@ const Header = () => {
            <Link  style={{textDecoration:"none", color:"white"}}> <Button color="inherit" >Blog</Button></Link>
            <Link style={{textDecoration:"none", color:"white"}}><Button color="inherit" >Contact</Button></Link>
             
-              <Button   color="inherit">log in</Button>
-              <Button   color="inherit">Sign Out</Button>
+            
+            {
+              loggedInUser.email
+              ?
+              <>
+              <Link style={{textDecoration:"none", color:"white"}}><Button color="inherit" >{loggedInUser.name}</Button></Link>
+              <Button onClick={()=> setLoggedInUser({})}  color="inherit">Sign Out</Button>
+              </>
+              :
+              <Link to="/login" style={{textDecoration:"none", color:"white"}}><Button color="inherit" >Login</Button></Link>
+            }
+           
+              
+            
             
           </div>
         </Toolbar>

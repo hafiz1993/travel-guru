@@ -30,7 +30,7 @@ function App(props) {
       <Container>
       <Router>
       <Header></Header>
-  <h3 style={{color:"white"}}>Email: {loggedInUser.email}</h3>
+  
       <Switch>
       <Route exact path ="/">
         <Home></Home>
