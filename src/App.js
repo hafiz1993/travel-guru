@@ -1,5 +1,5 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { createContext, useState } from 'react';
+
 import './App.css';
 import Header from './Components/Header/Header';
 import { Container } from '@material-ui/core';
@@ -9,38 +9,50 @@ import Reservation from './Components/Reservation/Reservation';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import NoMatch from './Components/NoMatch/NoMatch';
 import Hotel from './Components/Hotel/Hotel';
+import Login from './Components/Login/Login';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+
+export const UserContext = createContext();
 
 
 
-function App() {
+function App(props) {
+  const [loggedInUser, setLoggedInUser] = useState({})
+ 
   return (
-    <div className="App">
+   
+   <UserContext.Provider value ={[loggedInUser, setLoggedInUser]}>
+     <div className='App'>
       <Container>
       <Router>
       <Header></Header>
+  <h3 style={{color:"white"}}>Email: {loggedInUser.email}</h3>
       <Switch>
       <Route exact path ="/">
         <Home></Home>
       </Route>
         <Route path="/reservation/:id">
           <Reservation/></Route>
-          <Route  path="/hotels/:name"> 
+         
+          <PrivateRoute exact path="/hotels/:name">
           <Hotel></Hotel>
+            </PrivateRoute> 
+          
+              <Route path="/login">
+            <Login /> </Route>
+     <      Route path="*">
+           <NoMatch></NoMatch>
           </Route>
-     <Route path="*">
-         <NoMatch></NoMatch>
-          </Route>
-      
-      
       </Switch>
       </Router>
       </Container>
-    </div>
+      </div>
+      </UserContext.Provider>
+    
   );
 }
 

@@ -17,6 +17,7 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 import logo from '../../Images/Logo.png'
 import { Button} from '@material-ui/core';
 import { Link } from 'react-router-dom';
+// import { googleSignOut } from "../Login/LogInManager";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -24,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(3),
   },
   title: {
     display: 'none',
@@ -43,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 0,
     width: '100%',
     [theme.breakpoints.up('sm')]: {
-      marginLeft: theme.spacing(3),
+      marginLeft: theme.spacing(5),
       width: 'auto',
     },
   },
@@ -73,6 +74,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'none',
     [theme.breakpoints.up('md')]: {
       display: 'flex',
+      
     },
   },
   sectionMobile: {
@@ -190,11 +192,14 @@ const Header = () => {
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
 
-            <Button color="inherit">News</Button>
-            <Button color="inherit">Destination</Button>
-            <Button color="inherit">Blog</Button>
-            <Button color="inherit">Contact</Button>
-            <Button color="inherit">log in</Button>
+           <Link style={{textDecoration:"none", color:"white"}}> <Button color="inherit" >News</Button> </Link>
+           <Link style={{textDecoration:"none", color:"white"}}><Button color="inherit" >Destination</Button></Link> 
+           <Link  style={{textDecoration:"none", color:"white"}}> <Button color="inherit" >Blog</Button></Link>
+           <Link style={{textDecoration:"none", color:"white"}}><Button color="inherit" >Contact</Button></Link>
+            
+              <Button   color="inherit">log in</Button>
+              <Button   color="inherit">Sign Out</Button>
+            
           </div>
         </Toolbar>
       </AppBar>

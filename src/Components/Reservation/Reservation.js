@@ -54,7 +54,7 @@ const Reservation = () => {
     const {id} = useParams()
     const place = [...Area];
     const data = place[id];
-    
+       
 
 
     
@@ -104,6 +104,7 @@ const Reservation = () => {
         InputLabelProps={{
           shrink: true,
         }}
+        
         
       />
        
